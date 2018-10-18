@@ -1,0 +1,3 @@
+## Taller de Programación Básica.
+
+"JavaScript es el lenguaje de programación más importante de esta década, existe una enorme comunidad que lo utiliza. Si quieres aprender desarrollo web, este taller de introducción te permitirá conocer el mundo de las tecnologías, a través de la programación. Será impartido por estudiantes de la 6º generación de Laboratoria, bootcamp intensivo con especialización en Frontend Development"
