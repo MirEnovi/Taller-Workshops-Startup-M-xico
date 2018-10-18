@@ -35,9 +35,12 @@ function dibujarLineas(color, xinicial, yinicial, xfinal, yfinal) {
 	lienzo.closePath(); // terminan
 }
 
-// dibujarLineas('#095394', 0, 10, 10, 300);
-dibujarLineas('#15181a', 1, 1, 1, 300);
-dibujarLineas('#15181a', 1, 300, 300, 300);
+// dibujamos lineas ejes 
+dibujarLineas('#15181a', 1, 1, 1, 299);
+dibujarLineas('#15181a', 1, 299, 299, 299);
+
+dibujarLineas('#15181a', 1, 1, 299, 1);
+dibujarLineas('#15181a', 299, 299, 299, 1);
 
 
 
@@ -50,11 +53,16 @@ dibujarLineas('#15181a', 1, 300, 300, 300);
 
 var lineas = 30;
 
-for (let i = 0; i < lineas; i++) {
-	// dibujarLineas('#095394', 0, i, (i+10), 300);
-	dibujarLineas('#095394', 0, (i*10), ((i+1)*10), 300);
+// for (let i = 0; i < lineas; i++) {
+// 	dibujarLineas('#095394', 0, (i*10), ((i+1)*10), 300);
+// }
+
+for (let i = 10; i < 300; i=i+10) {
+	dibujarLineas('#095394', 0, i, (i+10), 300);
 }
 
-// for (let i = 10; i < 300; i=i+10) {
-// 	dibujarLineas('#095394', 0, i, (i+10), 300);
-// }
+/* INVIRTIENDO EL CANVAS*/
+
+for (let i = 10; i < 300; i=i+10) {
+	dibujarLineas('#095394', 300, i, (i+10), 0);
+}
